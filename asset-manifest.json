@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/armends-page/static/css/main.2cce8147.chunk.css",
+    "main.js": "/armends-page/static/js/main.22281248.chunk.js",
+    "main.js.map": "/armends-page/static/js/main.22281248.chunk.js.map",
+    "runtime~main.js": "/armends-page/static/js/runtime~main.5e935de0.js",
+    "runtime~main.js.map": "/armends-page/static/js/runtime~main.5e935de0.js.map",
+    "static/js/2.b41502e9.chunk.js": "/armends-page/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/armends-page/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/armends-page/index.html",
+    "precache-manifest.641a20bf7ffa653ce8221b35f10df036.js": "/armends-page/precache-manifest.641a20bf7ffa653ce8221b35f10df036.js",
+    "service-worker.js": "/armends-page/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/armends-page/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/armends-page/static/media/logo.5d5d9eef.svg"
+  }
+}
