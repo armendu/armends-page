@@ -61,6 +61,8 @@ class App extends React.Component {
           onLeave={this.onLeave.bind(this)}
           sectionsColor={this.state.sectionsColor}
 
+          licenseKey={'YOUR_KEY_HERE'}
+
           render={comp => (
             <ReactFullpage.Wrapper>
               {fullpages.map(({ text }) => (
