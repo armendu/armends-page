@@ -16,9 +16,6 @@ const Menu = () => (
         <button onClick={() => this.handleChangeColors()}>
           Change background colors
           </button>
-        <button onClick={() => this.moveSectionDown()}>
-          Move Section Down
-          </button>
       </li>
     </ul>
   </div>

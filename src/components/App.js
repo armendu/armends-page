@@ -14,7 +14,7 @@ class App extends React.Component {
       sectionsColor: [...originalColors],
       fullpages: [
         {
-          text: 'Section 1',
+          text: 'Armend Ukëhaxhaj',
         },
         {
           text: 'Section 2',
