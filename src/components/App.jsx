@@ -5,7 +5,7 @@ import Menu from './Menu';
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
-const originalColors = ['#ff5f45', '#0798ec', '#fc6c7c', '#435b71', 'orange', 'blue', 'purple', 'yellow'];
+const originalColors = ['white', '#0798ec', '#0abde3'];
 
 class App extends React.Component {
   constructor(props) {
@@ -32,16 +32,6 @@ class App extends React.Component {
     // with the event
   }
 
-  handleChangeColors() {
-    const newColors =
-      this.state.sectionsColor[0] === 'yellow'
-        ? [...originalColors]
-        : ['yellow', 'blue', 'white'];
-    this.setState({
-      sectionsColor: newColors,
-    });
-  }
-
   render() {
     const { fullpages } = this.state;
 
@@ -60,9 +50,6 @@ class App extends React.Component {
           sectionSelector={SECTION_SEL}
           onLeave={this.onLeave.bind(this)}
           sectionsColor={this.state.sectionsColor}
-
-          licenseKey={'YOUR_KEY_HERE'}
-
           render={comp => (
             <ReactFullpage.Wrapper>
               {fullpages.map(({ text }) => (

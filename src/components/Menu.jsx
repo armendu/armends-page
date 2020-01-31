@@ -1,4 +1,6 @@
 import React from 'react';
+import ButtonGroup from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 
 const Menu = () => (
   <div
@@ -11,11 +13,11 @@ const Menu = () => (
   >
     <ul class="actions">
       <li>
-        <button onClick={''}>About me</button>
-        <button onClick={''}>Projects</button>
-        <button onClick={() => this.handleChangeColors()}>
-          Change background colors
-          </button>
+        <ButtonGroup size="large" color="secondary" aria-label="large outlined primary button group">
+          <Button color="secondary">About me</Button>
+          <Button color="secondary">Projects</Button>
+          <Button color="secondary">Contact</Button>
+        </ButtonGroup>
       </li>
     </ul>
   </div>
