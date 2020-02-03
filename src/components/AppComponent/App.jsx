@@ -2,6 +2,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import React from 'react';
 import Menu from '../Menu';
 import Main from '../MainComponent/Main';
+import Footer from '../FooterComponent/Footer';
 
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
@@ -21,7 +22,7 @@ class App extends React.Component {
           src: '1'
         },
         {
-          src: '2'
+          src: <Footer />
         }
       ],
     };
