@@ -7,11 +7,7 @@ import Footer from '../FooterComponent/Footer';
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
-<<<<<<< HEAD:src/components/AppComponent/App.jsx
 // const originalColors = ['#0099cc', '#0798ec', '#0abde3'];
-=======
-const originalColors = ['white', '#0798ec', '#0abde3'];
->>>>>>> a8f52a87585705edb403f36328498dcf1735b6c0:src/components/App.jsx
 
 class App extends React.Component {
   constructor(props) {
@@ -60,10 +56,7 @@ class App extends React.Component {
           sectionSelector={SECTION_SEL}
           onLeave={this.onLeave.bind(this)}
           sectionsColor={this.state.sectionsColor}
-<<<<<<< HEAD:src/components/AppComponent/App.jsx
           
-=======
->>>>>>> a8f52a87585705edb403f36328498dcf1735b6c0:src/components/App.jsx
           render={comp => (
             <ReactFullpage.Wrapper>
               {fullpages.map(({ src }) => (
