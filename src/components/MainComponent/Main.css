@@ -1,13 +1,10 @@
-/* ======================
------ FIRST SECTION------
-=======================*/
-
 .first-section {
 	/* background-image: url(../img/first-section-bg.png); */
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
 	padding: 20% 0px 20% 0px;
+	background-color: #0099cc;
 }
 
 .first-section .text-content {

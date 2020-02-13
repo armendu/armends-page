@@ -1,19 +1,18 @@
 import ReactFullpage from '@fullpage/react-fullpage';
 import React from 'react';
-import Menu from '../Menu';
+import Menu from '../MenuComponent/Menu';
 import Main from '../MainComponent/Main';
 import Footer from '../FooterComponent/Footer';
 
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
-const originalColors = ['#0099cc', '#0798ec', '#0abde3'];
+// const originalColors = ['#0099cc', '#0798ec', '#0abde3'];
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sectionsColor: [...originalColors],
       fullpages: [
         {
           src: <Main />
@@ -24,7 +23,7 @@ class App extends React.Component {
         {
           src: <Footer />
         }
-      ],
+      ]
     };
   }
 
@@ -46,6 +45,8 @@ class App extends React.Component {
         <Menu />
         <ReactFullpage
           debug /* Debug logging */
+
+          licenseKey={''}
 
           // fullpage options
           navigation

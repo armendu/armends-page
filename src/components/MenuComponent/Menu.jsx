@@ -1,7 +1,6 @@
 import React from 'react';
 import ButtonGroup from '@material-ui/core/Button';
 import Button from '@material-ui/core/Button';
-// import './tooplate-style.css'
 
 const Menu = () => (
   <div
