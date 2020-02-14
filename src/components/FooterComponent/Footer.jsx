@@ -1,19 +1,19 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 import './Footer.css';
 
 const Footer = () => (
-    <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+  <footer>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12">
           <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="https://github.com/armendu"><FontAwesomeIcon icon={faGithub} size='3x'> </FontAwesomeIcon></a></li>
+            <li><a href="https://www.linkedin.com/in/armend-ukehaxhaj/"><FontAwesomeIcon icon={faLinkedin} size='3x'></FontAwesomeIcon></a> </li>
           </ul>
-          <p>Copyright &copy; { new Date().getFullYear() } Armend Ukëhaxhaj </p>
+          <p>Copyright &copy; {new Date().getFullYear()} Armend Ukëhaxhaj </p>
         </div>
       </div>
     </div>

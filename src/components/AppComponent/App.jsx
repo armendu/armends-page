@@ -1,27 +1,28 @@
 import ReactFullpage from '@fullpage/react-fullpage';
 import React from 'react';
-import Menu from '../MenuComponent/Menu';
+import Header from '../HeaderComponent/Header';
 import Main from '../MainComponent/Main';
 import Footer from '../FooterComponent/Footer';
 
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
-// const originalColors = ['#0099cc', '#0798ec', '#0abde3'];
+const originalColors = ['#0099cc', '#0798ec', '#0abde3'];
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      sectionsColor: [...originalColors],
       fullpages: [
         {
-          src: <Main />
+          component: <Main />
         },
         {
-          src: '1'
+          component: '1'
         },
         {
-          src: <Footer />
+          component: <Footer />
         }
       ]
     };
@@ -41,12 +42,12 @@ class App extends React.Component {
     }
 
     return (
-      <div className="App">
-        <Menu />
+      <div>
+        <Header />
         <ReactFullpage
           debug /* Debug logging */
 
-          licenseKey={''}
+          licenseKey={'J!dV0rW@r4'}
 
           // fullpage options
           navigation
@@ -59,9 +60,9 @@ class App extends React.Component {
           
           render={comp => (
             <ReactFullpage.Wrapper>
-              {fullpages.map(({ src }) => (
-                <div key={src} className={SEL}>
-                  <h1>{src}</h1>
+              {fullpages.map(( {component}, i) => (
+                <div key={i} className={SEL}>
+                  {component}
                 </div>
               ))}
             </ReactFullpage.Wrapper>
