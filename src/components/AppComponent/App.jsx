@@ -7,7 +7,7 @@ import Footer from '../FooterComponent/Footer';
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
-const originalColors = ['#0099cc', '#0798ec', '#0abde3'];
+const originalColors = ['#0099cc', '#0099cc', '#3CF'];
 
 class App extends React.Component {
   constructor(props) {
@@ -35,7 +35,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { fullpages } = this.state;
+    const { fullpages, sectionsColor } = this.state;
 
     if (!fullpages.length) {
       return null;
@@ -47,7 +47,7 @@ class App extends React.Component {
         <ReactFullpage
           debug /* Debug logging */
 
-          licenseKey={'J!dV0rW@r4'}
+          licenseKey={process.env.REACT_APP_FULLPAGE_LICENSE_KEY}
 
           // fullpage options
           navigation
@@ -56,11 +56,11 @@ class App extends React.Component {
           fixedElements={'#header, .footer'}
           sectionSelector={SECTION_SEL}
           onLeave={this.onLeave.bind(this)}
-          sectionsColor={this.state.sectionsColor}
-          
+          sectionsColor={sectionsColor}
+
           render={comp => (
             <ReactFullpage.Wrapper>
-              {fullpages.map(( {component}, i) => (
+              {fullpages.map(({ component }, i) => (
                 <div key={i} className={SEL}>
                   {component}
                 </div>
