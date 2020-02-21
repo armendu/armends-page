@@ -1,5 +1,5 @@
+import React, { useState } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
-import React from 'react';
 import Header from '../HeaderComponent/Header';
 import Main from '../MainComponent/Main';
 import Footer from '../FooterComponent/Footer';
@@ -9,39 +9,28 @@ const SECTION_SEL = `.${SEL}`;
 
 const originalColors = ['#0099cc', '#0099cc', '#3CF'];
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      sectionsColor: [...originalColors],
-      fullpages: [
-        {
-          component: <Main />
-        },
-        {
-          component: '1'
-        },
-        {
-          component: <Footer />
-        }
-      ]
-    };
-  }
+const App = () => {
+  const [sectionsColor] = useState([...originalColors]);
+  const [fullpages] = useState([
+    {
+      component: <Main />
+    },
+    {
+      component: '1'
+    },
+    {
+      component: <Footer />
+    }
+  ]);
 
-  onLeave(origin, destination, direction) {
+  const onLeave = (origin, destination, direction) => {
     console.log('onLeave', { origin, destination, direction });
     // arguments are mapped in order of fullpage.js callback arguments do something
     // with the event
   }
 
-  render() {
-    const { fullpages, sectionsColor } = this.state;
-
-    if (!fullpages.length) {
-      return null;
-    }
-
-    return (
+  return (
+    !fullpages.length ? null :
       <div>
         <Header />
         <ReactFullpage
@@ -55,7 +44,7 @@ class App extends React.Component {
           fitToSection={true}
           fixedElements={'#header, .footer'}
           sectionSelector={SECTION_SEL}
-          onLeave={this.onLeave.bind(this)}
+          onLeave={onLeave}
           sectionsColor={sectionsColor}
 
           render={comp => (
@@ -69,8 +58,7 @@ class App extends React.Component {
           )}
         />
       </div>
-    );
-  }
+  );
 }
 
 export default App;
