@@ -30,7 +30,6 @@ const App = () => {
   }
 
   return (
-    !fullpages.length ? null :
       <div>
         <Header />
         <ReactFullpage
