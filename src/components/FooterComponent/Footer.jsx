@@ -10,8 +10,8 @@ const Footer = () => (
       <div className="row">
         <div className="col-md-12">
           <ul>
-            <li><a href="https://github.com/armendu"><FontAwesomeIcon icon={faGithub} size='3x'> </FontAwesomeIcon></a></li>
-            <li><a href="https://www.linkedin.com/in/armend-ukehaxhaj/"><FontAwesomeIcon icon={faLinkedin} size='3x'></FontAwesomeIcon></a> </li>
+            <li><a href="https://github.com/armendu"><FontAwesomeIcon icon={faGithub} size='3x'/></a></li>
+            <li><a href="https://www.linkedin.com/in/armend-ukehaxhaj/"><FontAwesomeIcon icon={faLinkedin} size='3x'/></a> </li>
           </ul>
           <p>Copyright &copy; {new Date().getFullYear()} Armend Ukëhaxhaj </p>
         </div>
