@@ -1,0 +1,10 @@
+.menu-box {
+  position: fixed;
+  top: 0.5em;
+  left: 0.5em;
+  z-index: 100;
+}
+
+.menu { 
+  font-size: 20px;
+}
