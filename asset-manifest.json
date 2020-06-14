@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/armends-page/static/css/main.1754fb2d.chunk.css",
-    "main.js": "/armends-page/static/js/main.ce23f1cb.chunk.js",
-    "main.js.map": "/armends-page/static/js/main.ce23f1cb.chunk.js.map",
+    "main.js": "/armends-page/static/js/main.a46844a3.chunk.js",
+    "main.js.map": "/armends-page/static/js/main.a46844a3.chunk.js.map",
     "runtime-main.js": "/armends-page/static/js/runtime-main.a935404f.js",
     "runtime-main.js.map": "/armends-page/static/js/runtime-main.a935404f.js.map",
     "static/js/2.ac685f3e.chunk.js": "/armends-page/static/js/2.ac685f3e.chunk.js",
     "static/js/2.ac685f3e.chunk.js.map": "/armends-page/static/js/2.ac685f3e.chunk.js.map",
     "index.html": "/armends-page/index.html",
-    "precache-manifest.efb6c7d61cd302c258f5297b4eddbcf4.js": "/armends-page/precache-manifest.efb6c7d61cd302c258f5297b4eddbcf4.js",
+    "precache-manifest.8b91b69f36f0c56aa2ff4a765e0b2f8f.js": "/armends-page/precache-manifest.8b91b69f36f0c56aa2ff4a765e0b2f8f.js",
     "service-worker.js": "/armends-page/service-worker.js",
     "static/css/main.1754fb2d.chunk.css.map": "/armends-page/static/css/main.1754fb2d.chunk.css.map",
     "static/js/2.ac685f3e.chunk.js.LICENSE.txt": "/armends-page/static/js/2.ac685f3e.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.a935404f.js",
     "static/js/2.ac685f3e.chunk.js",
     "static/css/main.1754fb2d.chunk.css",
-    "static/js/main.ce23f1cb.chunk.js"
+    "static/js/main.a46844a3.chunk.js"
   ]
 }
