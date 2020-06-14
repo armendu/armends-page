@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Header from '../HeaderComponent/Header';
 import Main from '../MainComponent/Main';
+import Projects from '../ProjectsComponent/Projects';
 import Footer from '../FooterComponent/Footer';
 
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
-const originalColors = ['#0099cc', '#0099cc', '#3CF'];
+const originalColors = ['#0099cc', '#3CF', '#3CF'];
 
 const App = () => {
   const [sectionsColor] = useState([...originalColors]);
@@ -16,7 +17,7 @@ const App = () => {
       component: <Main />
     },
     {
-      component: '1'
+      component: <Projects />
     },
     {
       component: <Footer />

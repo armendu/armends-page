@@ -7,4 +7,36 @@
 
 .menu { 
   font-size: 20px;
+  margin: 5px;
+}
+
+.menu-box > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu-box > ul > li {
+  float: left;
+}
+
+.menu-box > ul > li > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-box > ul > li > a > span {
+  display: flex;
+  text-decoration: none;
+  width: 1.5em;
+}
+
+/* Change the link color to #111 (black) on hover */
+.menu-box > ul > li > a:hover {
+  /* background-color: #aaaaaa; */
+  border-radius: 50%;
 }

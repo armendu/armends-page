@@ -8,7 +8,7 @@ const Main = () => (
         <span className="heading-primary-main">Armend Ukehaxhaj</span>
         <span className="heading-primary-sub">Personal site</span>
       </h1>
-      <a href="https://google.com" className="btn btn-white btn-animated">Discover our tours</a>
+      <a href="https://google.com" className="btn btn-white btn-animated">Learn more</a>
     </div>
   </section>
 );
