@@ -8,8 +8,8 @@ const Header = () => (
   <header>
     <div className="menu-box">
       <ul>
-        <li><a href="default.asp"><FontAwesomeIcon icon={faHome} size='2x' /> <span className="menu"></span></a></li>
-        <li><a href="news.asp"><FontAwesomeIcon icon={faUser} size='2x' /> <span className="menu"></span></a></li>
+        <li><a href="#"><FontAwesomeIcon icon={faHome} size='2x' /> <span className="menu"></span></a></li>
+        <li><a href=""><FontAwesomeIcon icon={faUser} size='2x' /> <span className="menu"></span></a></li>
       </ul>
     </div>
   </header>
