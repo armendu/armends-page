@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/armends-page/precache-manifest.d0c2a977b9d8cb1209289144da188f90.js"
+  "/armends-page/precache-manifest.efb6c7d61cd302c258f5297b4eddbcf4.js"
 );
 
 self.addEventListener('message', (event) => {

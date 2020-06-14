@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/armends-page/static/css/main.f340c964.chunk.css",
-    "main.js": "/armends-page/static/js/main.2bf714a2.chunk.js",
-    "main.js.map": "/armends-page/static/js/main.2bf714a2.chunk.js.map",
-    "runtime-main.js": "/armends-page/static/js/runtime-main.1f4aa3ab.js",
-    "runtime-main.js.map": "/armends-page/static/js/runtime-main.1f4aa3ab.js.map",
-    "static/js/2.f790762d.chunk.js": "/armends-page/static/js/2.f790762d.chunk.js",
-    "static/js/2.f790762d.chunk.js.map": "/armends-page/static/js/2.f790762d.chunk.js.map",
+    "main.css": "/armends-page/static/css/main.1754fb2d.chunk.css",
+    "main.js": "/armends-page/static/js/main.ce23f1cb.chunk.js",
+    "main.js.map": "/armends-page/static/js/main.ce23f1cb.chunk.js.map",
+    "runtime-main.js": "/armends-page/static/js/runtime-main.a935404f.js",
+    "runtime-main.js.map": "/armends-page/static/js/runtime-main.a935404f.js.map",
+    "static/js/2.ac685f3e.chunk.js": "/armends-page/static/js/2.ac685f3e.chunk.js",
+    "static/js/2.ac685f3e.chunk.js.map": "/armends-page/static/js/2.ac685f3e.chunk.js.map",
     "index.html": "/armends-page/index.html",
-    "precache-manifest.d0c2a977b9d8cb1209289144da188f90.js": "/armends-page/precache-manifest.d0c2a977b9d8cb1209289144da188f90.js",
+    "precache-manifest.efb6c7d61cd302c258f5297b4eddbcf4.js": "/armends-page/precache-manifest.efb6c7d61cd302c258f5297b4eddbcf4.js",
     "service-worker.js": "/armends-page/service-worker.js",
-    "static/css/main.f340c964.chunk.css.map": "/armends-page/static/css/main.f340c964.chunk.css.map",
-    "static/js/2.f790762d.chunk.js.LICENSE.txt": "/armends-page/static/js/2.f790762d.chunk.js.LICENSE.txt",
-    "static/media/Main.css": "/armends-page/static/media/background-image.5d723e92.jpg"
+    "static/css/main.1754fb2d.chunk.css.map": "/armends-page/static/css/main.1754fb2d.chunk.css.map",
+    "static/js/2.ac685f3e.chunk.js.LICENSE.txt": "/armends-page/static/js/2.ac685f3e.chunk.js.LICENSE.txt",
+    "static/media/Main.css": "/armends-page/static/media/background-image.5d723e92.jpg",
+    "static/media/c-sharp-logo.png": "/armends-page/static/media/c-sharp-logo.9ffd0ff8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1f4aa3ab.js",
-    "static/js/2.f790762d.chunk.js",
-    "static/css/main.f340c964.chunk.css",
-    "static/js/main.2bf714a2.chunk.js"
+    "static/js/runtime-main.a935404f.js",
+    "static/js/2.ac685f3e.chunk.js",
+    "static/css/main.1754fb2d.chunk.css",
+    "static/js/main.ce23f1cb.chunk.js"
   ]
 }
