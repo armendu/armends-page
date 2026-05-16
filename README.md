@@ -1,34 +1,48 @@
-# My personal site
+# armends-page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio and CV site for Armend Ukehaxhaj, built with React, TypeScript, and Vite.
+
+Live at: https://armendu.github.io/armends-page/
+
+## Stack
+
+- **React 18** + **TypeScript**
+- **Vite 6** — dev server and build tooling
+- **FontAwesome** — icons
+- Plain CSS with custom properties — no CSS framework
+- **gh-pages** — deployment to GitHub Pages
 
 ## Getting started
 
-In the project directory, you can run:
+```bash
+npm install
+npm run dev      # dev server at http://localhost:5173/armends-page/
+npm run build    # type-check + production build → dist/
+npm run preview  # preview the production build locally
+npm run deploy   # build and push to GitHub Pages
+```
 
-### `npm install`
+## Project structure
 
-To install all the requirements of the app. Then run:
+```
+armends-page/
+├── index.html                          # Entry HTML (Vite root)
+├── vite.config.ts                      # Vite config (base path, plugin)
+├── tsconfig.json                       # TypeScript config
+├── public/
+│   ├── favicon.ico
+│   └── CV_ARMEND_UKEHAXHAJ.pdf        # Downloadable CV
+└── src/
+    ├── index.tsx                       # App entry point
+    ├── index.css                       # Global reset + smooth scroll
+    └── components/
+        ├── AppComponent/               # Root layout, CSS custom properties
+        ├── HeaderComponent/            # Fixed nav with scroll-aware active links
+        ├── HeroComponent/              # Name, title, bio, contact links, CV download
+        ├── ExperienceComponent/        # Work history (5 roles with stack tags)
+        ├── SkillsComponent/            # Grouped tech skills grid
+        ├── EducationComponent/         # Degrees + languages
+        └── FooterComponent/            # Social links, dark footer
+```
 
-### `npm start`
-
-Which runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Each component folder contains a `.tsx` file and a co-located `.css` file. All colours and spacing are driven by CSS custom properties defined in `App.css`.

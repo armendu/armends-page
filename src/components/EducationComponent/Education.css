@@ -1,0 +1,80 @@
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.education-item {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 24px 32px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.education-item:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-card);
+}
+
+.education-degree {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.education-field {
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  margin-bottom: 6px;
+}
+
+.education-school {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 16px 32px;
+  transition: border-color 0.2s;
+}
+
+.language-item:hover {
+  border-color: var(--color-accent);
+}
+
+.language-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.language-level {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+[data-theme="dark"] .education-item,
+[data-theme="dark"] .language-item {
+  background-color: var(--color-bg);
+}
+
+@media (max-width: 600px) {
+  .education-item,
+  .language-item {
+    padding: 18px 20px;
+  }
+}
