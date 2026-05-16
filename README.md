@@ -1,6 +1,6 @@
 # armends-page
 
-Personal portfolio and CV site for Armend Ukehaxhaj, built with React, TypeScript, and Vite.
+Personal portfolio site for Armend Ukehaxhaj, built with React, TypeScript, and Vite.
 
 Live at: https://armendu.github.io/armends-page/
 
@@ -30,15 +30,14 @@ armends-page/
 ├── vite.config.ts                      # Vite config (base path, plugin)
 ├── tsconfig.json                       # TypeScript config
 ├── public/
-│   ├── favicon.ico
-│   └── CV_ARMEND_UKEHAXHAJ.pdf        # Downloadable CV
+│   └── favicon.svg                     # SVG monogram favicon (AU)
 └── src/
     ├── index.tsx                       # App entry point
     ├── index.css                       # Global reset + smooth scroll
     └── components/
-        ├── AppComponent/               # Root layout, CSS custom properties
-        ├── HeaderComponent/            # Fixed nav with scroll-aware active links
-        ├── HeroComponent/              # Name, title, bio, contact links, CV download
+        ├── AppComponent/               # Root layout, CSS custom properties, dark mode vars
+        ├── HeaderComponent/            # Fixed nav, active section tracking, theme toggle
+        ├── HeroComponent/              # Name, title, bio, GitHub + LinkedIn links
         ├── ExperienceComponent/        # Work history (5 roles with stack tags)
         ├── SkillsComponent/            # Grouped tech skills grid
         ├── EducationComponent/         # Degrees + languages
